@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let arrayNumeros = [];
+
+        function esParOImpar() {
+            let numerosImpares = 0;
+            let numerosPares = 0;
+
+            while (true) {
+                let inserta = parseInt(prompt("Introduce números (0 para terminar):"));
+
+                if (isNaN(inserta)) {
+                    alert("Por favor, introduce un número válido.");
+                    break;  
+                }
+
+                if (inserta === 0) {
+                    break;
+                }
+
+                arrayNumeros.push(inserta);  
+            }
+
+            for (let j = 0; j < arrayNumeros.length; j++) {
+                if (esPar(arrayNumeros[j])) {
+                    numerosPares++;
+                } else {
+                    numerosImpares++;
+                }
+            }
+
+            console.log("Números introducidos: " + arrayNumeros);
+            console.log("Cantidad de números pares: " + numerosPares);
+            console.log("Cantidad de números impares: " + numerosImpares);
+        }
+
+        function esPar(num) {
+            return num % 2 === 0;
+        }
+
+        esParOImpar();
+    </script>
+</body>
+</html>
