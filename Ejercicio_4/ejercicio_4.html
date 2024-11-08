@@ -10,6 +10,7 @@
         let arrayNumeros = [];
 
         function esParOImpar() {
+            let i=0
             let numerosImpares = 0;
             let numerosPares = 0;
 
@@ -25,7 +26,8 @@
                     break;
                 }
 
-                arrayNumeros.push(inserta);  
+                arrayNumeros[i] = inserta;  
+                i++;
             }
 
             for (let j = 0; j < arrayNumeros.length; j++) {
