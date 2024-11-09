@@ -17,4 +17,4 @@ function precio(producto) {
 console.log(precio('monitor')); 
 console.log(precio('teclado')); 
 console.log(precio('ratón'));   
-console.log(precio('altavoz')); 
+console.log(precio('altavoz')); // Este no está en los precios
